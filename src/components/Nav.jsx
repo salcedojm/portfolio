@@ -11,7 +11,7 @@ export default function Nav() {
       <div className="wrap nav-inner">
         <a href="#top" className="nav-brand">
           <span className="dot" />
-          john-marie<span className="cursor-blink">_</span>
+          salcedojm.dev<span className="cursor-blink">_</span>
         </a>
         <nav className="nav-links">
           {LINKS.map((l) => (
