@@ -15,7 +15,6 @@ export default function Contact() {
         <div className="section-head" style={{ marginBottom: 32 }}>
           <span className="eyebrow">contact</span>
           <h2>Let's talk</h2>
-          <p>Placeholder contact details — swap in your real email and profiles.</p>
         </div>
 
         <div className="contact-links">

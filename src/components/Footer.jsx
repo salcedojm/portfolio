@@ -3,7 +3,6 @@ export default function Footer() {
     <footer className="footer">
       <div className="wrap footer-inner">
         <span>© {new Date().getFullYear()} John Marie Salcedo</span>
-        <span className="footer-mono">built with react + vite</span>
       </div>
       <style>{`
         .footer {
