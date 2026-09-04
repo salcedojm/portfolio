@@ -1,11 +1,16 @@
 const LINKS = [
   {
     label: 'Email',
-    value: 'salcedojm.dev@gmail.com',
-    href: 'mailto:salcedojm.dev@gmail.com',
+    value: 'contact@salcedojm.dev',
+    href: 'mailto:contact@salcedojm.dev',
   },
-  { label: 'Phone', value: '+63 945 891 5937', href: 'tel:+639458915937' },
+  { label: 'Phone', value: '+63 991 610 0827', href: 'tel:+639916100827' },
   { label: 'Location', value: 'Quezon City, Philippines', href: '#' },
+  {
+    label: 'LinkedIn',
+    value: 'linkedin.com/in/salcedojm',
+    href: 'https://ph.linkedin.com/in/salcedojm',
+  },
 ]
 
 export default function Contact() {
@@ -20,8 +25,15 @@ export default function Contact() {
         <div className="contact-links">
           {LINKS.map((l) => {
             const Tag = l.href === '#' ? 'div' : 'a'
+            const external = l.href.startsWith('http')
             return (
-              <Tag key={l.label} href={l.href === '#' ? undefined : l.href} className="contact-link">
+              <Tag
+                key={l.label}
+                href={l.href === '#' ? undefined : l.href}
+                target={external ? '_blank' : undefined}
+                rel={external ? 'noopener noreferrer' : undefined}
+                className="contact-link"
+              >
                 <span className="contact-label">{l.label}</span>
                 <span className="contact-value">{l.value}</span>
               </Tag>
