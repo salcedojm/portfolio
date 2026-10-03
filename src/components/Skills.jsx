@@ -33,10 +33,10 @@ export default function Skills() {
         <div className="section-head">
           <span className="eyebrow">skills</span>
           <h2>What I work with</h2>
-          <p>
+          {/* <p>
             A snapshot of the languages, frameworks, and tools in regular rotation. Edit this list
             to match your own stack.
-          </p>
+          </p> */}
         </div>
 
         <div className="skills-grid">
